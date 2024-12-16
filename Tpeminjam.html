@@ -1,0 +1,247 @@
+<html>
+  <head>
+    <title>Tambah Data Peminjaman</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+        background-color: #f5f5f5;
+      }
+      .sidebar {
+        width: 250px;
+        background-color: #fff;
+        border-right: 1px solid #ddd;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .sidebar img {
+        width: 100px;
+        display: block;
+        margin: 0 auto 10px;
+      }
+      .sidebar h2 {
+        text-align: center;
+        color: #007bff;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+      .sidebar ul li {
+        margin-bottom: 10px;
+      }
+      .sidebar ul li a {
+        text-decoration: none;
+        color: #333;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .sidebar ul li a:hover,
+      .sidebar ul li a.active {
+        background-color: #007bff;
+        color: #fff;
+      }
+      .sidebar ul li a i {
+        margin-right: 10px;
+      }
+      .content {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .content-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .content-header a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+      }
+      .content-header a:hover {
+        text-decoration: underline;
+      }
+      .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-container h3 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 500;
+      }
+      .form-group input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      .form-group input:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+      .form-actions {
+        display: flex;
+        justify-content: space-between;
+      }
+      .form-actions button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      .form-actions .btn-cancel {
+        background-color: #fff;
+        color: #007bff;
+        border: 1px solid #007bff;
+      }
+      .form-actions .btn-cancel:hover {
+        background-color: #007bff;
+        color: #fff;
+      }
+      .form-actions .btn-save {
+        background-color: #007bff;
+        color: #fff;
+      }
+      .form-actions .btn-save:hover {
+        background-color: #0056b3;
+      }
+      .logout {
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div>
+        <img
+          alt="Koperasi Twins Logo"
+          height="100"
+          src="./foto/logo.png"
+          width="100"
+        />
+        <h2>KOPERASI TWINS</h2>
+        <ul>
+          <li>
+            <a class="active" href="datapeminjam.html">
+              <i class="fas fa-hand-holding-usd"> </i>
+              Data Peminjaman
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="logout">
+        <ul>
+          <li>
+            <a href="#" style="color: #dc3545">
+              <i class="fas fa-sign-out-alt"> </i>
+              Keluar
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-header">
+        <a href="datapeminjam.html">
+          <i class="fas fa-arrow-left"> </i>
+          Kembali
+        </a>
+        <a href="home.html"> Home </a>
+      </div>
+      <div class="form-container">
+        <h3>Tambah Data Peminjaman</h3>
+        <div class="form-group">
+          <label>
+            ID:
+            <span
+              style="
+                background-color: #e0e0e0;
+                padding: 5px 10px;
+                border-radius: 5px;
+              "
+            >
+              1
+            </span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label> Provinsi </label>
+          <input type="text" value="Kudus" />
+        </div>
+        <div class="form-group">
+          <label> Nama </label>
+          <input type="text" value="Surya" />
+        </div>
+        <div class="form-group">
+          <label> No. HP (WA) </label>
+          <input type="text" value="+62 812 3456 7890" />
+        </div>
+        <div class="form-actions">
+          <a
+            href="datapeminjam.html"
+            class="btn-cancel"
+            style="
+              text-decoration: none;
+              padding: 10px 20px;
+              border: 1px solid #007bff;
+              border-radius: 5px;
+              background-color: #fff;
+              color: #007bff;
+              text-align: center;
+            "
+            >BATALKAN</a
+          >
+          <a
+            href="datapeminjam.html"
+            class="btn-save"
+            style="
+              text-decoration: none;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 5px;
+              background-color: #007bff;
+              color: #fff;
+              text-align: center;
+            "
+            >SIMPAN</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

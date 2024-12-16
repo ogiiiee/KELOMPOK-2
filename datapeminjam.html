@@ -1,0 +1,238 @@
+<html>
+  <head>
+    <title>Data Peminjaman</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      .container {
+        display: flex;
+      }
+      .sidebar {
+        width: 250px;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 100vh;
+      }
+      .sidebar img {
+        width: 100px;
+        display: block;
+        margin: 0 auto 20px;
+      }
+      .sidebar h2 {
+        text-align: center;
+        color: #007bff;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+      .sidebar ul li {
+        margin-bottom: 10px;
+      }
+      .sidebar ul li a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .sidebar ul li a:hover,
+      .sidebar ul li a.active {
+        background-color: #007bff;
+        color: white;
+      }
+      .sidebar ul li a i {
+        margin-right: 10px;
+      }
+      .content {
+        flex-grow: 1;
+        padding: 20px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .header h1 {
+        font-size: 24px;
+        margin: 0;
+      }
+      .header a {
+        text-decoration: none;
+        color: #007bff;
+      }
+      .table-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .table-container h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .table-container table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .table-container table th,
+      .table-container table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+      .table-container table th {
+        background-color: #f5f5f5;
+      }
+      .table-container table td:last-child {
+        text-align: center;
+      }
+      .table-container .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      .table-container .btn:hover {
+        background-color: #0056b3;
+      }
+      .table-container .action-icons i {
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #f5f5f5;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .sidebar {
+          width: 100%;
+          height: auto;
+        }
+        .content {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <img
+          alt="Logo of Koperasi TWINS"
+          height="100"
+          src="./foto/logo.png"
+          width="100"
+        />
+        <h2>KOPERASI TWINS</h2>
+        <ul>
+          <li>
+            <a href="dasboard.html">
+              <i class="fas fa-tachometer-alt"> </i>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="datanasabah.html">
+              <i class="fas fa-users"> </i>
+              Data Nasabah
+            </a>
+          </li>
+          <li>
+            <a class="active" href="datapeminjam.html">
+              <i class="fas fa-hand-holding-usd"> </i>
+              Data Peminjaman
+            </a>
+          </li>
+          <li>
+            <a href="dataangsuran.html">
+              <i class="fas fa-file-invoice-dollar"> </i>
+              Data Angsuran
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="header">
+          <h1>Data Peminjaman</h1>
+          <a href="home.html"> Home </a>
+        </div>
+        <div class="table-container">
+          <a class="btn" href="Tpeminjam.html"> + Tambah Data </a>
+          <h2>Data Peminjaman</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Jumlah Ambil</th>
+                <th>Tanggal Pinjam</th>
+                <th>Biaya Admin</th>
+                <th>Tenor</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Rp.1.500.000</td>
+                <td>21.04.2023</td>
+                <td>Rp.16.000</td>
+                <td>12.11.24</td>
+                <td class="action-icons">
+                  <i class="fas fa-edit"> </i>
+                  <i class="fas fa-trash-alt"> </i>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Rp.10.000.000</td>
+                <td>28.02.2023</td>
+                <td>Rp.16.000</td>
+                <td>18.10.24</td>
+                <td class="action-icons">
+                  <i class="fas fa-edit"> </i>
+                  <i class="fas fa-trash-alt"> </i>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Rp.5.000.000</td>
+                <td>19.06.2023</td>
+                <td>Rp.16.000</td>
+                <td>8.12.24</td>
+                <td class="action-icons">
+                  <i class="fas fa-edit"> </i>
+                  <i class="fas fa-trash-alt"> </i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="footer">© 2023 Koperasi TWINS</div>
+  </body>
+</html>

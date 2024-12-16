@@ -1,0 +1,245 @@
+<html>
+  <head>
+    <title>Tambah Data Nasabah</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .sidebar {
+        width: 250px;
+        background-color: #fff;
+        border-right: 1px solid #ddd;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .sidebar img {
+        width: 100px;
+        display: block;
+        margin: 0 auto 20px;
+      }
+      .sidebar h2 {
+        text-align: center;
+        color: #007bff;
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+      .sidebar ul li {
+        margin-bottom: 10px;
+      }
+      .sidebar ul li a {
+        text-decoration: none;
+        color: #333;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .sidebar ul li a:hover,
+      .sidebar ul li a.active {
+        background-color: #007bff;
+        color: #fff;
+      }
+      .sidebar ul li a i {
+        margin-right: 10px;
+      }
+      .sidebar ul li a.logout {
+        color: #dc3545;
+      }
+      .content {
+        flex-grow: 1;
+        padding: 20px;
+      }
+      .content .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .content .header a {
+        text-decoration: none;
+        color: #007bff;
+        font-size: 14px;
+      }
+      .content .header h1 {
+        font-size: 24px;
+        color: #333;
+        margin-right: 40%;
+      }
+      .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-container .form-group {
+        margin-bottom: 15px;
+      }
+      .form-container .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+      }
+      .form-container .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      .form-container .form-group input:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+      .form-container .form-group .form-control-static {
+        padding: 10px;
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .form-container .form-actions {
+        display: flex;
+        justify-content: space-between;
+      }
+      .form-container .form-actions button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .form-container .form-actions .btn-cancel {
+        background-color: #fff;
+        color: #007bff;
+        border: 1px solid #007bff;
+      }
+      .form-container .form-actions .btn-save {
+        background-color: #007bff;
+        color: #fff;
+      }
+
+      @media (max-width: 768px) {
+        .sidebar {
+          width: 100%;
+          border-right: none;
+          border-bottom: 1px solid #ddd;
+        }
+        .content {
+          padding: 10px;
+        }
+        .form-container {
+          padding: 10px;
+        }
+        .form-container .form-actions {
+          flex-direction: column;
+        }
+        .form-container .form-actions button {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <img src="./foto/logo.png" alt="Koperasi Twins Logo" />
+        <h2>KOPERASI TWINS</h2>
+        <ul>
+          <li>
+            <a href="datanasabah.html" class="active"
+              ><i class="fas fa-user"></i> Data Nasabah</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="header">
+          <a href="datanasabah.html"
+            ><i class="fas fa-arrow-left"></i> Kembali</a
+          >
+          <h1>Tambah Data Nasabah</h1>
+        </div>
+        <div class="form-container">
+          <div class="form-group">
+            <label>ID:</label>
+            <div class="form-control-static">1</div>
+          </div>
+          <div class="form-group">
+            <label>Password:</label>
+            <div class="form-control-static">GKBI</div>
+          </div>
+          <div class="form-group">
+            <label>Nama</label>
+            <input type="text" value="Surya" />
+          </div>
+          <div class="form-group">
+            <label>Jenis Kelamin</label>
+            <input type="text" value="Laki-laki" />
+          </div>
+          <div class="form-group">
+            <label>Tanggal Lahir</label>
+            <input type="text" value="10 Oktober 1999" />
+          </div>
+          <div class="form-group">
+            <label>No. HP</label>
+            <input type="text" value="+62 812 3456 7890" />
+          </div>
+          <div class="form-group">
+            <label>Alamat</label>
+            <input type="text" value="Kudus" />
+          </div>
+          <div class="form-actions">
+            <a
+              href="datanasabah.html"
+              class="btn-cancel"
+              style="
+                text-decoration: none;
+                padding: 10px 20px;
+                border: 1px solid #007bff;
+                border-radius: 5px;
+                background-color: #fff;
+                color: #007bff;
+                text-align: center;
+              "
+              >BATALKAN</a
+            >
+            <a
+              href="datanasabah.html"
+              class="btn-save"
+              style="
+                text-decoration: none;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: #fff;
+                text-align: center;
+              "
+              >SIMPAN</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

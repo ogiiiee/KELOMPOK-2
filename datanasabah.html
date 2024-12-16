@@ -1,0 +1,249 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Data Nasabah</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      .container {
+        display: flex;
+      }
+      .sidebar {
+        width: 250px;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 100vh;
+      }
+      .sidebar img {
+        width: 100px;
+        display: block;
+        margin: 0 auto 20px;
+      }
+      .sidebar h2 {
+        text-align: center;
+        color: #007bff;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+      .sidebar ul li {
+        margin-bottom: 10px;
+      }
+      .sidebar ul li a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .sidebar ul li a:hover,
+      .sidebar ul li a.active {
+        background-color: #007bff;
+        color: white;
+      }
+      .sidebar ul li a i {
+        margin-right: 10px;
+      }
+      .content {
+        flex-grow: 1;
+        padding: 20px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .header h1 {
+        font-size: 24px;
+        margin: 0;
+      }
+      .header a {
+        text-decoration: none;
+        color: #007bff;
+      }
+      .table-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .table-container h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .table-container table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .table-container table th,
+      .table-container table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+      .table-container table th {
+        background-color: #f5f5f5;
+      }
+      .table-container table td:last-child {
+        text-align: center;
+      }
+      .table-container .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      .table-container .btn:hover {
+        background-color: #0056b3;
+      }
+      .table-container .action-icons i {
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #f5f5f5;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .sidebar {
+          width: 100%;
+          height: auto;
+        }
+        .content {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <img
+          alt="Logo of Koperasi TWINS"
+          height="100"
+          src="./foto/logo.png"
+          width="100"
+        />
+        <h2>KOPERASI TWINS</h2>
+        <ul>
+          <li>
+            <a href="dasboard.html">
+              <i class="fas fa-tachometer-alt"> </i>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a class="active" href="datanasabah.html">
+              <i class="fas fa-users"> </i>
+              Data Nasabah
+            </a>
+          </li>
+          <li>
+            <a href="datapeminjam.html">
+              <i class="fas fa-hand-holding-usd"> </i>
+              Data Peminjaman
+            </a>
+          </li>
+          <li>
+            <a href="dataangsuran.html">
+              <i class="fas fa-file-alt"> </i>
+              Data Angsuran
+            </a>
+          </li>
+        </ul>
+        <ul>
+      </div>
+      <div class="content">
+        <div class="header">
+          <h1>Data Nasabah</h1>
+          <a href="home.html"> Home </a>
+        </div>
+        <div class="table-container">
+          <a class="btn" href="Tnasabah.html"> + Tambah Data </a>
+          <h2>Data Nasabah</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Password</th>
+                <th>Nama</th>
+                <th>Jenis Kelamin</th>
+                <th>Tanggal Lahir</th>
+                <th>No. HP (WA)</th>
+                <th>Alamat</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>GKBI</td>
+                <td>Surya</td>
+                <td>Laki-laki</td>
+                <td>10 Oktober 1999</td>
+                <td>+62 812 3456 7890</td>
+                <td>Kudus</td>
+                <td class="action-icons">
+                  <i class="fas fa-edit"> </i>
+                  <i class="fas fa-trash-alt"> </i>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>KOPINDO</td>
+                <td>Arya</td>
+                <td>Laki-laki</td>
+                <td>5 Juli 2001</td>
+                <td>+62 812 2456 7890</td>
+                <td>Pati</td>
+                <td class="action-icons">
+                  <i class="fas fa-edit"> </i>
+                  <i class="fas fa-trash-alt"> </i>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>KOPENAS</td>
+                <td>Samson</td>
+                <td>Laki-laki</td>
+                <td>30 September 2003</td>
+                <td>+62 812 1456 7890</td>
+                <td>Demak</td>
+                <td class="action-icons">
+                  <i class="fas fa-edit"> </i>
+                  <i class="fas fa-trash-alt"> </i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="footer">© 2023 Koperasi TWINS</div>
+  </body>
+</html>

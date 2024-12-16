@@ -1,0 +1,189 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Koperasi Twins</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        height: 100vh;
+        width: 100%;
+      }
+      .container {
+        display: flex;
+        width: 100%;
+      }
+      .left-section {
+        width: 50%;
+        padding: 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .left-section img.logo {
+        width: 100px;
+        height: 100px;
+      }
+      .left-section h1 {
+        font-size: 24px;
+        margin: 20px 0;
+      }
+      .left-section p {
+        font-size: 16Fpx;
+        color: #666;
+        margin-left: -30%;
+      }
+      .left-section form {
+        width: 100%;
+        max-width: 400px;
+      }
+      .left-section form input[type="text"],
+      .left-section form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .left-section form input[type="checkbox"] {
+        margin-right: 10px;
+      }
+      .left-section form label {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+      }
+      .left-section form a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .left-section form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .left-section .register {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+      .left-section .register a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .right-section {
+        width: 50%;
+        display: flex;
+        position: relative;
+      }
+      .right-section img {
+        max-width: 100%;
+        height: auto;
+      }
+      .nav {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .nav a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+      }
+      .button {
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        background-color: #88aacc;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #096bff;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .left-section,
+        .right-section {
+          width: 100%;
+        }
+        .right-section {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-section">
+        <img
+          alt="Koperasi Twins logo"
+          class="logo"
+          height="100"
+          src="./foto/logo.png"
+          width="100"
+        />
+        <h1>KOPERASI TWINS</h1>
+        <p>
+          Selamat datang,
+          <br />
+          Silakan masuk akun Anda
+        </p>
+        <form>
+          <input placeholder="Username" type="text" />
+          <input placeholder="Password" type="password" />
+          <label>
+            <input type="checkbox" />
+            Ingat password saya
+          </label>
+          <a href="#"> Reset password &amp; lupa username </a>
+          <a href="dasboard.html" class="button">MASUK</a>
+        </form>
+        <div class="register">
+          BELUM PUNYA AKUN?
+          <a href="#"> DAFTAR </a>
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="nav">
+          <a href="home.html"> Home </a>
+          <a class="button" href="#"> Daftar </a>
+        </div>
+        <img
+          alt="Illustration of a hand dropping coins into a city with a mobile phone and financial chart"
+          src=".//foto/loginbg.jpg"
+        />
+      </div>
+    </div>
+  </body>
+</html>

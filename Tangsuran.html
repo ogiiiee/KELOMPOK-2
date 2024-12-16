@@ -1,0 +1,205 @@
+<html>
+  <head>
+    <title>Tambah Data Angsuran</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+        background-color: #f5f5f5;
+      }
+      .sidebar {
+        width: 250px;
+        background-color: #ffffff;
+        border-right: 1px solid #ddd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      .sidebar img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+      .sidebar h2 {
+        color: #007bff;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .sidebar a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      .sidebar a i {
+        margin-right: 10px;
+      }
+      .sidebar a.active {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .sidebar a.logout {
+        color: #dc3545;
+        margin-top: auto;
+      }
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
+      .content-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .content-header h1 {
+        font-size: 24px;
+        margin: 0;
+      }
+      .content-header a {
+        text-decoration: none;
+        color: #007bff;
+        font-size: 16px;
+      }
+      .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-container h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .form-group input[readonly] {
+        background-color: #f5f5f5;
+      }
+      .form-actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+      }
+      .form-actions button {
+        padding: 10px 20px;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form-actions .cancel {
+        background-color: #fff;
+        color: #007bff;
+        border: 1px solid #007bff;
+        margin-right: 10px;
+      }
+      .form-actions .save {
+        background-color: #007bff;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <img
+        alt="Koperasi Twins Logo"
+        height="100"
+        src="./foto/logo.png"
+        width="100"
+      />
+      <h2>KOPERASI TWINS</h2>
+      <a class="active" href="Tangsuran.html">
+        <i class="fas fa-file-alt"> </i>
+        Data Angsuran
+      </a>
+    </div>
+    <div class="content">
+      <div class="content-header">
+        <h1>Tambah Data Angsuran</h1>
+        <a href="home.html"> Home </a>
+      </div>
+      <div class="form-container">
+        <a class="btn-back" href="dataangsuran.html">
+          <i class="fas fa-arrow-left"> </i>
+          Kembali
+        </a>
+        <h2>Tambah Data Angsuran</h2>
+        <div class="form-group">
+          <label for="id"> ID: </label>
+          <input id="id" readonly="" type="text" value="1" />
+        </div>
+        <div class="form-group">
+          <label for="name"> Nama: </label>
+          <input id="name" type="text" value="Surya" />
+        </div>
+        <div class="form-group">
+          <label for="jumlah-bayar"> Jumlah Bayar: </label>
+          <input id="jumlah-bayar" type="text" value="Rp.500.000" />
+        </div>
+        <div class="form-group">
+          <label for="jumlah-ambil"> Jumlah Ambil: </label>
+          <input id="jumlah-ambil" type="text" value="Rp.1.500.000" />
+        </div>
+       <div class="form-actions" style="display: flex; justify-content: flex-end; gap: 50px; margin-top: 20px;">
+  <a
+    href="dataangsuran.html"
+    class="btn-cancel"
+    style="
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 1px solid #007bff;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #007bff;
+      text-align: center;
+    "
+    >BATALKAN</a
+  >
+  <a
+    href="dataangsuran.html"
+    class="btn-save"
+    style="
+      text-decoration: none;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+    "
+    >SIMPAN</a
+  >
+</div>
+
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
